@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant page built with Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IjayAbby/restaurant-page.git"
+  },
+  "author": "IjayAbby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IjayAbby/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/IjayAbby/restaurant-page#readme"
+}
