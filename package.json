@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/IjayAbby/restaurant-page/issues"
   },
-  "homepage": "https://github.com/IjayAbby/restaurant-page#readme"
+  "homepage": "https://github.com/IjayAbby/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  }
 }
