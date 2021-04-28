@@ -8,7 +8,7 @@ function createHeader() {
   
     const restaurantName = document.createElement("h1");
     restaurantName.classList.add("restaurant-name");
-    restaurantName.textContent = "Mozzafiato";
+    restaurantName.textContent = "The Vic";
   
     header.appendChild(restaurantName);
     header.appendChild(createNav());
@@ -78,10 +78,10 @@ function createFooter() {
     footer.classList.add("footer");
   
     const copyright = document.createElement("p");
-    copyright.textContent = "Copyright © 2021 michalosman";
+    copyright.textContent = "Copyright © 2021 ijayabby";
   
     const githubLink = document.createElement("a");
-    githubLink.href = "https://github.com/michalosman";
+    githubLink.href = "https://github.com/IjayAbby";
   
     const githubIcon = document.createElement("i");
     githubIcon.classList.add("fab");

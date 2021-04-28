@@ -4,50 +4,44 @@ function createMenu() {
 
     menu.appendChild(
         createMenuItem(
-          "Salsiccia",
-          "Tomato sauce, Mozarella, Tomato, Homemade sausage, Garlic, Basil"
+          "Tilapia Fish",
+          "Wet Fried fish straight from the Lake Victoria."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Gamberi",
-          "Tomato sauce, Mozarella, Shrimps, Feta cheese, Olives, Basil"
+          "Fried Chicken",
+          "Served with chips, ugali or rice."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Pepe",
-          "Tomato sauce, Mozarella, Chilli flakes, Olives, Basil"
+          "Nyama Choma",
+          "Served with ugali, chips and preferred to have kachumbari."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Disgustoso",
-          "Tomato sauce, Bacon, Pineapple, Olives, Basil"
+          "Pilau",
+          "Prefers to be served plain with cold Soda but most prefer stew."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Colorato",
-          "Tomato sauce, Mozarella, Onion, Pepper, Champignons, Basil"
+          "Githeri",
+          "Served as a whole meal."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Pomodoro",
-          "Tomato sauce, Mozarella, Tomato, Onion, Feta cheese, Chilli"
+          "Chapati",
+          "Served with any stew, mostly beef or checken stew."
         )
       );
       menu.appendChild(
         createMenuItem(
-          "Crema",
-          "White sauce, Mozarella, Shrimps, Salmon, Pineapple, Olives, Basil"
-        )
-      );
-      menu.appendChild(
-        createMenuItem(
-          "Carne",
-          "Tomato sauce, Mozarella, Homemade sausage, Bacon, Garlic, Pepper, Chilli"
+          "Ugali",
+          "This is Kenya's staple food. Mostly served with stews like beef, chicken or fish."
         )
       );
     
@@ -65,7 +59,7 @@ function createMenuItem(name, description) {
     foodDescription.textContent = description;
 
     const foodImage = document.createElement("img");
-    foodImage.src = `images/pizzas/${name.toLowerCase()}.png`;
+    foodImage.src = `images/food/${name.toLowerCase()}.png`;
     foodImage.alt = `${name}`;
 
     menuItem.appendChild(foodImage);
