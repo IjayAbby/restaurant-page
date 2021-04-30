@@ -6,8 +6,9 @@ Vanilla JavaScript project for implementing a restaurant page
 
 ## Built With
 
-- JavaScript
+- Vanilla JavaScript
 - Webpack
+- HTML
 
 ## Getting Started
 
@@ -23,7 +24,7 @@ To get this project up and running locally, you must already have Node or Yarn p
 - Run `cd restaurant-page`
 ```
 
-- [Live Version]()
+- [Live Version](https://quirky-poitras-33271d.netlify.app/)
 
 <!-- ### Run Tests -->
 
