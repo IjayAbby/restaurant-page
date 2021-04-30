@@ -1,4 +1,4 @@
-function createMenu() {
+const createMenu = () => {
   const menu = document.createElement('div');
   menu.classList.add('menu');
 
@@ -40,7 +40,7 @@ function createMenu() {
   return menu;
 }
 
-function createMenuItem(name, description) {
+const createMenuItem = (name, description) => {
   const menuItem = document.createElement('div');
   menuItem.classList.add('menu-item');
 
@@ -51,7 +51,7 @@ function createMenuItem(name, description) {
   foodDescription.textContent = description;
 
   const foodImage = document.createElement('img');
-  foodImage.src = `images/food/${name.toLowerCase()}.png`;
+  foodImage.src = `images/food${name.toLowerCase()}.jpg`;
   foodImage.alt = `${name}`;
 
   menuItem.appendChild(foodImage);
@@ -61,7 +61,7 @@ function createMenuItem(name, description) {
   return menuItem;
 }
 
-function loadMenu() {
+const loadMenu = () => {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createMenu());
