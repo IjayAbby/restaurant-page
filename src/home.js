@@ -1,10 +1,10 @@
-function createParagraph(text) {
+const createParagraph = (text) => {
   const paragraph = document.createElement('p');
   paragraph.textContent = text;
   return paragraph;
 }
 
-function createHome() {
+const createHome = () => {
   const home = document.createElement('div');
   home.classList.add('home');
 
@@ -15,7 +15,7 @@ function createHome() {
   return home;
 }
 
-function loadHome() {
+const  loadHome = () => {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createHome());
