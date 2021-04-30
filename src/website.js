@@ -2,7 +2,7 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
 
-function createHeader() {
+const createHeader = () => {
   const header = document.createElement('header');
   header.classList.add('header');
 
@@ -16,7 +16,7 @@ function createHeader() {
   return header;
 }
 
-function createNav() {
+const createNav = () => {
   const nav = document.createElement('nav');
 
   const homeButton = document.createElement('button');
@@ -53,7 +53,7 @@ function createNav() {
   return nav;
 }
 
-function setActiveButton(button) {
+const setActiveButton = (button) => {
   const buttons = document.querySelectorAll('.button-nav');
 
   buttons.forEach((button) => {
@@ -65,7 +65,7 @@ function setActiveButton(button) {
   button.classList.add('active');
 }
 
-function createMain() {
+const createMain = () => {
   const main = document.createElement('main');
   main.classList.add('main');
   main.setAttribute('id', 'main');
@@ -73,7 +73,7 @@ function createMain() {
   return main;
 }
 
-function createFooter() {
+const createFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('footer');
 
@@ -94,7 +94,7 @@ function createFooter() {
   return footer;
 }
 
-function initializeWebsite() {
+const initializeWebsite = () => {
   const content = document.getElementById('content');
 
   content.appendChild(createHeader());
