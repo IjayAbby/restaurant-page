@@ -1,7 +1,7 @@
 function createParagraph(text) {
-    const paragraph = document.createElement('p');
-    paragraph.textContent = text;
-    return paragraph;
+  const paragraph = document.createElement('p');
+  paragraph.textContent = text;
+  return paragraph;
 }
 
 function createHome() {
@@ -14,7 +14,6 @@ function createHome() {
 
   return home;
 }
-
 
 function loadHome() {
   const main = document.getElementById('main');
