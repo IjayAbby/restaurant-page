@@ -2,19 +2,17 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
 
-const createHeader = () => {
-  const header = document.createElement('header');
-  header.classList.add('header');
+const setActiveButton = (button) => {
+  const buttons = document.querySelectorAll('.button-nav');
 
-  const restaurantName = document.createElement('h1');
-  restaurantName.classList.add('restaurant-name');
-  restaurantName.textContent = 'The Executive';
+  buttons.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove('active');
+    }
+  });
 
-  header.appendChild(restaurantName);
-  header.appendChild(createNav());
-
-  return header;
-}
+  button.classList.add('active');
+};
 
 const createNav = () => {
   const nav = document.createElement('nav');
@@ -51,19 +49,21 @@ const createNav = () => {
   nav.appendChild(contactButton);
 
   return nav;
-}
+};
 
-const setActiveButton = (button) => {
-  const buttons = document.querySelectorAll('.button-nav');
+const createHeader = () => {
+  const header = document.createElement('header');
+  header.classList.add('header');
 
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove('active');
-    }
-  });
+  const restaurantName = document.createElement('h1');
+  restaurantName.classList.add('restaurant-name');
+  restaurantName.textContent = 'The Executive';
 
-  button.classList.add('active');
-}
+  header.appendChild(restaurantName);
+  header.appendChild(createNav());
+
+  return header;
+};
 
 const createMain = () => {
   const main = document.createElement('main');
@@ -71,7 +71,7 @@ const createMain = () => {
   main.setAttribute('id', 'main');
 
   return main;
-}
+};
 
 const createFooter = () => {
   const footer = document.createElement('footer');
@@ -92,7 +92,7 @@ const createFooter = () => {
   footer.appendChild(githubLink);
 
   return footer;
-}
+};
 
 const initializeWebsite = () => {
   const content = document.getElementById('content');
@@ -103,6 +103,6 @@ const initializeWebsite = () => {
 
   setActiveButton(document.querySelector('.button-nav'));
   loadHome();
-}
+};
 
 export default initializeWebsite;
