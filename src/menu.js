@@ -4,36 +4,41 @@ const createMenu = () => {
 
   menu.appendChild(
     createMenuItem(
-      'Tilapia Fish',
-      'Wet Fried fish straight from the Lake Victoria.',
+      'Tilapia',
+      'Wet Fried fish straight from the Lake Victoria.'
     ),
   );
   menu.appendChild(
-    createMenuItem('Fried Chicken', 'Served with chips, ugali or rice.'),
+    createMenuItem(
+      'Chicken', 'Served with chips, ugali or rice.'
+    ),
   );
   menu.appendChild(
     createMenuItem(
       'Nyama Choma',
-      'Served with ugali, chips and preferred to have kachumbari.',
+      'Served with ugali, chips and preferred to have kachumbari.'
     ),
   );
+
   menu.appendChild(
     createMenuItem(
-      'Pilau',
-      'Prefers to be served plain with cold Soda but most prefer stew.',
+      'Githeri',
+      'This is a traditional food from Central people in Kenyan country.'
     ),
   );
-  menu.appendChild(createMenuItem('Githeri', 'Served as a whole meal.'));
+
   menu.appendChild(
     createMenuItem(
       'Chapati',
-      'Served with any stew, mostly beef or checken stew.',
+      'Served with any stew, mostly beef or checken stew.'
     ),
   );
+ 
+
   menu.appendChild(
     createMenuItem(
       'Ugali',
-      "This is Kenya's staple food. Mostly served with stews like beef, chicken or fish.",
+      "This is Kenya's staple food. Mostly served with stews like beef, chicken or fish."
     ),
   );
 
@@ -51,9 +56,10 @@ const createMenuItem = (name, description) => {
   foodDescription.textContent = description;
 
   const foodImage = document.createElement('img');
-  foodImage.src = `images/food${name.toLowerCase()}.jpg`;
-  foodImage.alt = `${name}`;
-
+  //foodImage.src = `images/food/${name.toLowerCase()}.jpg`;
+  foodImage.src = `images/food/${name.toLowerCase()}.jpg`;
+  // foodImage.alt = `${name}`;
+ 
   menuItem.appendChild(foodImage);
   menuItem.appendChild(foodName);
   menuItem.appendChild(foodDescription);
